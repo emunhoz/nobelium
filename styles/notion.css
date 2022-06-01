@@ -11,6 +11,9 @@
   @apply leading-8;
   @apply p-0;
   @apply my-3;
+  @apply text-xl;
+  @apply leading-relaxed;
+  @apply md:leading-loose;
 }
 .notion-page-link {
   color: inherit;

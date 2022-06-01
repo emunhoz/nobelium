@@ -31,7 +31,7 @@ const Layout = ({
       fullWidth={fullWidth}
     >
       <article>
-        <h1 className="font-bold text-3xl text-black dark:text-white">
+        <h1 className="font-bold text-2xl text-black dark:text-white">
           {frontMatter.title}
         </h1>
         {frontMatter.type[0] !== 'Page' && (
@@ -45,7 +45,7 @@ const Layout = ({
                   src={`https://gravatar.com/avatar/${emailHash}`}
                   className="rounded-full"
                 />
-                <p className="ml-2 md:block">{BLOG.author}</p>
+                <p className="ml-2 md:block">{BLOG.firstName}</p>
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
