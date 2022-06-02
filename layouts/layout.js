@@ -35,9 +35,9 @@ const Layout = ({
           {frontMatter.title}
         </h1>
         {frontMatter.type[0] !== 'Page' && (
-          <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
-            <div className="flex mb-4">
-              <a href={BLOG.socialLinks.twitter || '#'} className="flex">
+          <nav className="flex mt-7 mb-4 text-sm items-center text-gray-500 dark:text-gray-400">
+            <div className="flex items-center">
+              <a href={BLOG.socialLinks.twitter || '#'} className="flex items-center">
                 <Image
                   alt={BLOG.author}
                   width={24}
@@ -45,11 +45,11 @@ const Layout = ({
                   src={`https://gravatar.com/avatar/${emailHash}`}
                   className="rounded-full"
                 />
-                <p className="ml-2 md:block">{BLOG.firstName}</p>
+                <p className="ml-2 flex items-center md:block">{BLOG.firstName}</p>
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
-            <div className="mr-2 mb-4 md:ml-0">
+            <div className="mr-2 md:ml-0">
               {formatDate(
                 frontMatter?.date?.start_date || frontMatter.createdTime,
                 BLOG.lang
